@@ -27,11 +27,6 @@ namespace Jogao_N2
 
         public bool colisao = false;
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrmPrincipal_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space && imgBala.Visible == false)
