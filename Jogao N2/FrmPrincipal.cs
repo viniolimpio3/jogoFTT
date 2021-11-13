@@ -107,5 +107,10 @@ namespace Jogao_N2
             items.Add(newPic);
             this.Controls.Add(newPic);
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FlappyBall novoJogador = new FlappyBall();
+            novoJogador.Show();
+        }
     }
 }
