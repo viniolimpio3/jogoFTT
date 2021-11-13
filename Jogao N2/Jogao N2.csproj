@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmFlappyBall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlappyBall.Designer.cs">
+      <DependentUpon>FrmFlappyBall.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMinigMataPalmeiras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFlappyBall.resx">
+      <DependentUpon>FrmFlappyBall.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMinigMataPalmeiras.resx">
       <DependentUpon>FrmMinigMataPalmeiras.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +145,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_fundo_minig_palmeiras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\200w.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\130253070_106328824601736_6718456248721065003_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ball-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\blogue aniv Silva.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\bolasemfundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\bolasemfundo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\dudasv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\gif bola rolando.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\gramado-grama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\gramado-grama_Easy-Resize.com %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\jogador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\jogador-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\S3lLpB.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
