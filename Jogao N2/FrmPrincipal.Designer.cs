@@ -176,7 +176,6 @@
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
-            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmPrincipal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.imgNPCBoss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNPC1)).EndInit();
