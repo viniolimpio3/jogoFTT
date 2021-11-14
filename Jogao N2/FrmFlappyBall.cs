@@ -23,15 +23,17 @@ namespace Jogao_N2
         Random defender = new Random();
         Random defender2 = new Random();
         Random defender3 = new Random();
+        public string nomeJogador;
 
 
-        public FlappyBall()
+        public FlappyBall(string nome)
         {
             InitializeComponent();
             pbBolaRolando.Parent = pbDudu;
             txtComoJogar.Parent = pbDudu;
             txtFechar.Parent = pbDudu;
             txtInstrucao.Parent = pbDudu;
+            this.nomeJogador = nome;
         }
 
         private void tmPontuacao_Tick(object sender, EventArgs e)

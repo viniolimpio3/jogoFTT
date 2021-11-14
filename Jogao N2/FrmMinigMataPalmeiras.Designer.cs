@@ -25,30 +25,145 @@ namespace Jogao_N2 {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this.timerSpawnaPalmeiras = new System.Windows.Forms.Timer(this.components);
+            this.timerSpawnPalmeiras = new System.Windows.Forms.Timer(this.components);
             this.btnStartGame = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbJogador = new System.Windows.Forms.Label();
+            this.lbPontuacao = new System.Windows.Forms.Label();
+            this.lb_game_title = new System.Windows.Forms.Label();
+            this.pbLogoPalmeiras = new System.Windows.Forms.PictureBox();
+            this.lb_how_to_play = new System.Windows.Forms.Label();
+            this.lb_rule_2 = new System.Windows.Forms.Label();
+            this.lb_rule_1 = new System.Windows.Forms.Label();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.lbQtdItens = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoPalmeiras)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timerSpawnPalmeiras
+            // 
+            this.timerSpawnPalmeiras.Interval = 1000;
+            this.timerSpawnPalmeiras.Tick += new System.EventHandler(this.timerSpawnPalmeiras_Tick);
             // 
             // btnStartGame
             // 
-            this.btnStartGame.Location = new System.Drawing.Point(265, 180);
+            this.btnStartGame.Location = new System.Drawing.Point(235, 252);
             this.btnStartGame.Name = "btnStartGame";
-            this.btnStartGame.Size = new System.Drawing.Size(75, 23);
+            this.btnStartGame.Size = new System.Drawing.Size(145, 34);
             this.btnStartGame.TabIndex = 0;
-            this.btnStartGame.Text = "Iniciar";
+            this.btnStartGame.Text = "Bora Derrotar o Palmeiras?!";
             this.btnStartGame.UseVisualStyleBackColor = true;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             // 
-            // label1
+            // lbJogador
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(29, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lbJogador.AutoSize = true;
+            this.lbJogador.BackColor = System.Drawing.Color.Transparent;
+            this.lbJogador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJogador.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbJogador.Location = new System.Drawing.Point(29, 9);
+            this.lbJogador.Name = "lbJogador";
+            this.lbJogador.Size = new System.Drawing.Size(107, 15);
+            this.lbJogador.TabIndex = 1;
+            this.lbJogador.Text = "Jogador: XYYYZZZ";
+            // 
+            // lbPontuacao
+            // 
+            this.lbPontuacao.AutoSize = true;
+            this.lbPontuacao.BackColor = System.Drawing.Color.Transparent;
+            this.lbPontuacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPontuacao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbPontuacao.Location = new System.Drawing.Point(495, 9);
+            this.lbPontuacao.Name = "lbPontuacao";
+            this.lbPontuacao.Size = new System.Drawing.Size(92, 15);
+            this.lbPontuacao.TabIndex = 2;
+            this.lbPontuacao.Text = "Pontuação: 000";
+            // 
+            // lb_game_title
+            // 
+            this.lb_game_title.AutoSize = true;
+            this.lb_game_title.BackColor = System.Drawing.Color.Transparent;
+            this.lb_game_title.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_game_title.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_game_title.Location = new System.Drawing.Point(50, 35);
+            this.lb_game_title.Name = "lb_game_title";
+            this.lb_game_title.Size = new System.Drawing.Size(402, 37);
+            this.lb_game_title.TabIndex = 100;
+            this.lb_game_title.Text = "Game: Acabe com o Palmeiras";
+            // 
+            // pbLogoPalmeiras
+            // 
+            this.pbLogoPalmeiras.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbLogoPalmeiras.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogoPalmeiras.BackgroundImage = global::Jogao_N2.Properties.Resources.logo_palmeiras_256;
+            this.pbLogoPalmeiras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLogoPalmeiras.InitialImage = global::Jogao_N2.Properties.Resources.palmeiras_logo;
+            this.pbLogoPalmeiras.Location = new System.Drawing.Point(513, 218);
+            this.pbLogoPalmeiras.Name = "pbLogoPalmeiras";
+            this.pbLogoPalmeiras.Size = new System.Drawing.Size(110, 101);
+            this.pbLogoPalmeiras.TabIndex = 4;
+            this.pbLogoPalmeiras.TabStop = false;
+            // 
+            // lb_how_to_play
+            // 
+            this.lb_how_to_play.AutoSize = true;
+            this.lb_how_to_play.BackColor = System.Drawing.Color.Transparent;
+            this.lb_how_to_play.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_how_to_play.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_how_to_play.Location = new System.Drawing.Point(52, 75);
+            this.lb_how_to_play.Name = "lb_how_to_play";
+            this.lb_how_to_play.Size = new System.Drawing.Size(122, 28);
+            this.lb_how_to_play.TabIndex = 101;
+            this.lb_how_to_play.Text = "Como Jogar:";
+            // 
+            // lb_rule_2
+            // 
+            this.lb_rule_2.AutoSize = true;
+            this.lb_rule_2.BackColor = System.Drawing.Color.Transparent;
+            this.lb_rule_2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rule_2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_rule_2.Location = new System.Drawing.Point(52, 123);
+            this.lb_rule_2.Name = "lb_rule_2";
+            this.lb_rule_2.Size = new System.Drawing.Size(494, 28);
+            this.lb_rule_2.TabIndex = 102;
+            this.lb_rule_2.Text = "- Clique nos palmeiras que aparecerem, e extermine-os!";
+            // 
+            // lb_rule_1
+            // 
+            this.lb_rule_1.AutoSize = true;
+            this.lb_rule_1.BackColor = System.Drawing.Color.Transparent;
+            this.lb_rule_1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rule_1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_rule_1.Location = new System.Drawing.Point(52, 151);
+            this.lb_rule_1.Name = "lb_rule_1";
+            this.lb_rule_1.Size = new System.Drawing.Size(492, 28);
+            this.lb_rule_1.TabIndex = 103;
+            this.lb_rule_1.Text = "- Não deixe chegar ao Número de 10 Palmeiras em Tela";
+            // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(268, 9);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 24);
+            this.btnStop.TabIndex = 104;
+            this.btnStop.Text = "Pausar";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Visible = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // lbQtdItens
+            // 
+            this.lbQtdItens.AutoSize = true;
+            this.lbQtdItens.BackColor = System.Drawing.Color.Transparent;
+            this.lbQtdItens.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQtdItens.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbQtdItens.Location = new System.Drawing.Point(29, 290);
+            this.lbQtdItens.Name = "lbQtdItens";
+            this.lbQtdItens.Size = new System.Drawing.Size(144, 15);
+            this.lbQtdItens.TabIndex = 105;
+            this.lbQtdItens.Text = "Quantidade de Palmeiras";
+            this.lbQtdItens.Visible = false;
             // 
             // FrmMinigMataPalmeiras
             // 
@@ -56,12 +171,20 @@ namespace Jogao_N2 {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Jogao_N2.Properties.Resources.img_fundo_minig_palmeiras;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 382);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(611, 314);
+            this.Controls.Add(this.lbQtdItens);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.lb_rule_1);
+            this.Controls.Add(this.lb_rule_2);
+            this.Controls.Add(this.lb_how_to_play);
+            this.Controls.Add(this.pbLogoPalmeiras);
+            this.Controls.Add(this.lb_game_title);
+            this.Controls.Add(this.lbPontuacao);
+            this.Controls.Add(this.lbJogador);
             this.Controls.Add(this.btnStartGame);
             this.Name = "FrmMinigMataPalmeiras";
             this.Text = "Minigame: Mata-Palmeiras";
-            this.Load += new System.EventHandler(this.FrmMinigMataPalmeiras_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoPalmeiras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,8 +192,16 @@ namespace Jogao_N2 {
 
         #endregion
 
-        private System.Windows.Forms.Timer timerSpawnaPalmeiras;
+        private System.Windows.Forms.Timer timerSpawnPalmeiras;
         private System.Windows.Forms.Button btnStartGame;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbJogador;
+        private System.Windows.Forms.Label lbPontuacao;
+        private System.Windows.Forms.Label lb_game_title;
+        private System.Windows.Forms.PictureBox pbLogoPalmeiras;
+        private System.Windows.Forms.Label lb_how_to_play;
+        private System.Windows.Forms.Label lb_rule_2;
+        private System.Windows.Forms.Label lb_rule_1;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Label lbQtdItens;
     }
 }

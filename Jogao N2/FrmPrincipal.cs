@@ -14,13 +14,18 @@ namespace Jogao_N2
     public partial class FrmPrincipal : Form
     {
         #region Inicializar
+
+        public string nomeJogador;
+
         public FrmPrincipal()
         {
+
             InitializeComponent();
         }
 
         public FrmPrincipal(string nome) : this()
         {
+            this.nomeJogador = nome;
             lblNome.Text = nome;
         }
         #endregion
@@ -108,9 +113,31 @@ namespace Jogao_N2
             this.Controls.Add(newPic);
         }
 
-        private void button2_Click(object sender, EventArgs e) {
-            FlappyBall novoJogador = new FlappyBall();
-            novoJogador.Show();
+        public void setMinigame(string game) {
+            switch (game) {
+                case "flappy":
+                    this.Hide();
+                    FlappyBall f = new FlappyBall(this.nomeJogador);
+                    f.Show();
+                    break;
+                case "palmeiras":
+                    this.Hide();
+                    FrmMinigMataPalmeiras p = new FrmMinigMataPalmeiras(this.nomeJogador);
+                    timerNPC.Stop();
+                    p.Show();
+                    break;
+                case "penalti":
+                    //Chamar a tela de Pênalti aqui!
+                    MessageBox.Show("ADICIONAR TELA FORM Pênalti"); //REMOVER!
+                    break;
+                default:
+                    MessageBox.Show("Minigame passado inválido - no método minigame()");
+                    break;
+            }
+        }
+
+        private void btnMinigamePalmeiras_Click(object sender, EventArgs e) {
+            this.setMinigame("palmeiras");
         }
     }
 }

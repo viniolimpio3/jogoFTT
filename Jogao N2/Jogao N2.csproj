@@ -197,5 +197,14 @@
   <ItemGroup>
     <None Include="Properties\S3lLpB.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmeiras-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmeiras-logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-palmeiras-256.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
