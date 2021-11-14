@@ -233,6 +233,36 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_palmeiras_256 {
+            get {
+                object obj = ResourceManager.GetObject("logo-palmeiras-256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap palmeiras_logo {
+            get {
+                object obj = ResourceManager.GetObject("palmeiras-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap palmeiras_logo1 {
+            get {
+                object obj = ResourceManager.GetObject("palmeiras-logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap S3lLpB {
             get {
                 object obj = ResourceManager.GetObject("S3lLpB", resourceCulture);
