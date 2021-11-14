@@ -42,6 +42,7 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.timerNPC = new System.Windows.Forms.Timer(this.components);
             this.btnMinigamePalmeiras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgNPCBoss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNPC1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgJogador1)).BeginInit();
@@ -164,12 +165,23 @@
             this.btnMinigamePalmeiras.UseVisualStyleBackColor = true;
             this.btnMinigamePalmeiras.Click += new System.EventHandler(this.btnMinigamePalmeiras_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(182, 386);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "penalte";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(462, 676);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMinigamePalmeiras);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.pictureBox4);
@@ -216,5 +228,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Timer timerNPC;
         private System.Windows.Forms.Button btnMinigamePalmeiras;
+        private System.Windows.Forms.Button button1;
     }
 }
