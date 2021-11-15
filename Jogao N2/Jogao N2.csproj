@@ -76,6 +76,12 @@
     <Compile Include="FrmNovoJogador.Designer.cs">
       <DependentUpon>FrmNovoJogador.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPenalte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPenalte.Designer.cs">
+      <DependentUpon>FrmPenalte.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNovoJogador.resx">
       <DependentUpon>FrmNovoJogador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPenalte.resx">
+      <DependentUpon>FrmPenalte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

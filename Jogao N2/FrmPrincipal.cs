@@ -139,5 +139,11 @@ namespace Jogao_N2
         private void btnMinigamePalmeiras_Click(object sender, EventArgs e) {
             this.setMinigame("palmeiras");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmPenalte Penalte = new FrmPenalte();
+            Penalte.Show();
+        }
     }
 }
