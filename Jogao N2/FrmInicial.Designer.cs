@@ -36,7 +36,7 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(250, 174);
+            this.btnIniciar.Location = new System.Drawing.Point(277, 107);
             this.btnIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(133, 56);
@@ -47,7 +47,7 @@
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(250, 408);
+            this.btnSobre.Location = new System.Drawing.Point(277, 395);
             this.btnSobre.Margin = new System.Windows.Forms.Padding(4);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(133, 56);
@@ -58,7 +58,7 @@
             // 
             // btnConfiguracoes
             // 
-            this.btnConfiguracoes.Location = new System.Drawing.Point(250, 252);
+            this.btnConfiguracoes.Location = new System.Drawing.Point(277, 200);
             this.btnConfiguracoes.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfiguracoes.Name = "btnConfiguracoes";
             this.btnConfiguracoes.Size = new System.Drawing.Size(133, 56);
@@ -69,7 +69,7 @@
             // 
             // btnRanking
             // 
-            this.btnRanking.Location = new System.Drawing.Point(250, 331);
+            this.btnRanking.Location = new System.Drawing.Point(277, 304);
             this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
             this.btnRanking.Name = "btnRanking";
             this.btnRanking.Size = new System.Drawing.Size(133, 56);
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 646);
+            this.ClientSize = new System.Drawing.Size(704, 501);
             this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.btnConfiguracoes);
             this.Controls.Add(this.btnSobre);
@@ -91,9 +91,11 @@
             this.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FrmInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tela Inicial";
+            this.Text = "The Last Corinthians Warriors";
+            this.Load += new System.EventHandler(this.FrmInicial_Load);
             this.ResumeLayout(false);
 
         }

@@ -48,3 +48,22 @@ C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\bin\Debug\Jogao N2.exe
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\bin\Debug\Jogao N2.pdb
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmPrincipal.resources
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\obj\Debug\Jogao N2.csproj.CoreCompileInputs.cache
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\bin\Debug\Jogao N2.exe.config
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\bin\Debug\Jogao N2.exe
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\bin\Debug\Jogao N2.pdb
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao N2.csproj.AssemblyReference.cache
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FlappyBall.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmMinigMataPalmeiras.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmConfiguracoes.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmInicial.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmNovoJogador.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmPrincipal.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmRanking.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmSobre.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.Properties.Resources.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao N2.csproj.GenerateResource.cache
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao N2.csproj.CoreCompileInputs.cache
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao N2.exe
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao N2.pdb
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmPenaltiTut.resources
+C:\Users\moond\Documents\Jogo\backup\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmPenalti.resources

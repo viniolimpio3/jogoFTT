@@ -12,6 +12,8 @@ namespace Jogao_N2
 {
     public partial class FrmNovoJogador : Form
     {
+        
+        public static FrmPrincipal principal = new FrmPrincipal("dudu");
         /// <summary>
         /// Inicializador do Forms
         /// </summary>
@@ -46,7 +48,7 @@ namespace Jogao_N2
             {
                 this.Close();
                 string nome = txtNome.Text;
-                FrmPrincipal principal = new FrmPrincipal(nome);
+                //FrmPrincipal principal = new FrmPrincipal(nome);
                 this.Visible = false;
                 principal.ShowDialog();
                 //this.Visible = true;

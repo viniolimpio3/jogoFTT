@@ -142,8 +142,14 @@ namespace Jogao_N2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmPenalte Penalte = new FrmPenalte();
-            Penalte.Show();
+            FrmPenaltiTut PenalteTut = new FrmPenaltiTut();
+            this.Hide();
+            PenalteTut.Show();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,5 +31,11 @@ namespace Jogao_N2
             this.Close();
         }
         #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmInicial.inicial.Show();
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace Jogao_N2
 {
     public partial class FrmInicial : Form
     {
+        public static FrmInicial inicial = new FrmInicial();
         public FrmInicial()
         {
             InitializeComponent();
@@ -21,24 +22,33 @@ namespace Jogao_N2
         {
             FrmNovoJogador novoJogador = new FrmNovoJogador();
             novoJogador.Show();
+            this.Hide();
         }
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
             FrmConfiguracoes configuracoes = new FrmConfiguracoes();
             configuracoes.Show();
+            this.Hide();
         }
 
         private void btnSobre_Click(object sender, EventArgs e)
         {
             FrmSobre sobre = new FrmSobre();
             sobre.Show();
+            this.Hide();
         }
 
         private void btnRanking_Click(object sender, EventArgs e)
         {
             FrmRanking ranking = new FrmRanking();
             ranking.Show();
+            this.Hide();
+        }
+
+        private void FrmInicial_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
