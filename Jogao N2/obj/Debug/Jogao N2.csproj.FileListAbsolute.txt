@@ -48,3 +48,4 @@ C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\bin\Debug\Jogao N2.exe
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\bin\Debug\Jogao N2.pdb
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\obj\Debug\Jogao_N2.FrmPrincipal.resources
 C:\Users\moond\Documents\Jogo\jogoFTT\Jogao N2\obj\Debug\Jogao N2.csproj.CoreCompileInputs.cache
+C:\Users\vinio\csharp\jogao_ec2\Jogao N2\obj\Debug\Jogao_N2.FrmPenalte.resources

@@ -36,7 +36,11 @@ namespace Jogao_N2 {
             this.lb_rule_1 = new System.Windows.Forms.Label();
             this.btnStop = new System.Windows.Forms.Button();
             this.lbQtdItens = new System.Windows.Forms.Label();
+            this.lb_rule_3 = new System.Windows.Forms.Label();
+            this.timerSpawnCorinthians = new System.Windows.Forms.Timer(this.components);
+            this.pbCorinthians = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoPalmeiras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCorinthians)).BeginInit();
             this.SuspendLayout();
             // 
             // timerSpawnPalmeiras
@@ -165,6 +169,35 @@ namespace Jogao_N2 {
             this.lbQtdItens.Text = "Quantidade de Palmeiras";
             this.lbQtdItens.Visible = false;
             // 
+            // lb_rule_3
+            // 
+            this.lb_rule_3.AutoSize = true;
+            this.lb_rule_3.BackColor = System.Drawing.Color.Transparent;
+            this.lb_rule_3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rule_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_rule_3.Location = new System.Drawing.Point(52, 182);
+            this.lb_rule_3.Name = "lb_rule_3";
+            this.lb_rule_3.Size = new System.Drawing.Size(383, 28);
+            this.lb_rule_3.TabIndex = 106;
+            this.lb_rule_3.Text = "- Não clique nos Corinthians que aparecer!";
+            // 
+            // timerSpawnCorinthians
+            // 
+            this.timerSpawnCorinthians.Interval = 1001;
+            this.timerSpawnCorinthians.Tick += new System.EventHandler(this.timerSpawnCorinthians_Tick);
+            // 
+            // pbCorinthians
+            // 
+            this.pbCorinthians.BackColor = System.Drawing.Color.Transparent;
+            this.pbCorinthians.BackgroundImage = global::Jogao_N2.Properties.Resources.logo_corinthians_512;
+            this.pbCorinthians.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbCorinthians.Location = new System.Drawing.Point(491, 35);
+            this.pbCorinthians.Name = "pbCorinthians";
+            this.pbCorinthians.Size = new System.Drawing.Size(65, 54);
+            this.pbCorinthians.TabIndex = 107;
+            this.pbCorinthians.TabStop = false;
+            this.pbCorinthians.Visible = false;
+            // 
             // FrmMinigMataPalmeiras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +205,8 @@ namespace Jogao_N2 {
             this.BackgroundImage = global::Jogao_N2.Properties.Resources.img_fundo_minig_palmeiras;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(611, 314);
+            this.Controls.Add(this.pbCorinthians);
+            this.Controls.Add(this.lb_rule_3);
             this.Controls.Add(this.lbQtdItens);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.lb_rule_1);
@@ -185,6 +220,7 @@ namespace Jogao_N2 {
             this.Name = "FrmMinigMataPalmeiras";
             this.Text = "Minigame: Mata-Palmeiras";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoPalmeiras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCorinthians)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +239,8 @@ namespace Jogao_N2 {
         private System.Windows.Forms.Label lb_rule_1;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label lbQtdItens;
+        private System.Windows.Forms.Label lb_rule_3;
+        private System.Windows.Forms.Timer timerSpawnCorinthians;
+        private System.Windows.Forms.PictureBox pbCorinthians;
     }
 }

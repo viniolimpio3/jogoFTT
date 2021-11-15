@@ -13,14 +13,18 @@ namespace Jogao_N2 {
 
 
         private string nomeJogador;
-        private int interval = 2000;
+        private int interval = 1000;
+        private int intervalo_ini = 1000;
         private Item[] itens;
+        private PictureBox lastPicCorinthians;
         private int qtdAtualItens = 0;
         private const int QTD_MAX_ITENS = 10;
+        private int qtdSpawned = 0;
+        private int pontuacao = 0;
+        private bool ganhou = false;
 
         struct Item {
             public PictureBox pic;
-            public bool status;
         }
 
         public FrmMinigMataPalmeiras(string nome) {
@@ -48,6 +52,7 @@ namespace Jogao_N2 {
 
             this.clearItens();
 
+            timerSpawnCorinthians.Start();
             timerSpawnPalmeiras.Start();
         }
 
@@ -62,6 +67,7 @@ namespace Jogao_N2 {
             lb_how_to_play.Visible = visible;
             lb_rule_1.Visible = visible;
             lb_rule_2.Visible = visible;
+            lb_rule_3.Visible = visible;
             btnStartGame.Visible = visible;
             pbLogoPalmeiras.Visible = visible;
 
@@ -75,7 +81,7 @@ namespace Jogao_N2 {
         private void btnStop_Click(object sender, EventArgs e) {
             
             this.exibeOuRemoveMenu();
-
+            timerSpawnCorinthians.Stop();
             timerSpawnPalmeiras.Stop();
         }
 
@@ -110,6 +116,7 @@ namespace Jogao_N2 {
 
             this.insereItem(item);
             this.Controls.Add(pic); //Adicionando A picture em tela
+            this.applyRules();
         }
 
         private void Palmeiras_Click(object sender, EventArgs e) {
@@ -118,6 +125,42 @@ namespace Jogao_N2 {
             this.removeItem(pic_clicada); //Remove do vetor de Item[]
 
             this.Controls.Remove(pic_clicada);
+        }
+
+        private void Corinthians_Click(object sender, EventArgs e) {
+            PictureBox pic_clicada = sender as PictureBox;
+
+            this.Controls.Remove(pic_clicada);
+            this.pontuacao = 0;
+            this.gameOver();
+        }
+
+        /// <summary>
+        /// De acordo com a qtd de spanws, altera os intervalos dos timers, aumentando as dificuldades
+        /// Aplica também as regras de Pontuação
+        /// </summary>
+        private void applyRules() {
+
+            if (this.qtdSpawned > 55)
+                this.gameOver(true);
+
+            //Feito neste formato para reduzir a qtd de ifs!
+            //Regras
+            int[] rule_spawns = {2, 5, 10, 15, 20, 50 };
+            int[] rule_intervals = {800, 700, 500, 400, 400, 300 }; //em milissegundos
+            int[] rule_pontuacao = {2, 10, 20, 40, 50, 200 };
+
+            for(int i=0; i < rule_spawns.Length; i++) {
+                if(this.qtdSpawned == rule_spawns[i]) {
+                    this.interval = rule_intervals[i];
+                    this.pontuacao += rule_pontuacao[i];
+
+                    lbPontuacao.Text = $"PONTUAÇÃO: {this.pontuacao}";
+
+                    break;
+                }
+            }           
+
         }
 
         /// <summary>
@@ -129,7 +172,7 @@ namespace Jogao_N2 {
                 if(itens[i].pic == null) {
                     itens[i] = item;
                     this.qtdAtualItens += 1;
-
+                    this.qtdSpawned++;
                     lbQtdItens.Text = $"Quantidade de Palmeiras: {this.qtdAtualItens}";
 
                     break;
@@ -142,7 +185,6 @@ namespace Jogao_N2 {
         /// </summary>
         /// <param name="pic"></param>
         private void removeItem(PictureBox pic) {
-
 
             int indexRemoved = 0;
             //Achando qual é o item para ser removido e colocando como null
@@ -191,24 +233,72 @@ namespace Jogao_N2 {
 
         private void clearItens() {
 
-            itens = new Item[QTD_MAX_ITENS];
-            for(int i=0; i < itens.Length; i++) {
-                if(itens[i].pic != null) {
-                    this.Controls.Remove(itens[i].pic);
-                }
+            if(this.itens != null) {
+                for(int i=0; i < this.itens.Length; i++) {
+                    if(this.itens[i].pic != null) {
+                        this.Controls.Remove(this.itens[i].pic);
+                    }
                 
-                itens[i].pic = null;
+                    this.itens[i].pic = null;
+                }
+            }else {
+                this.itens = new Item[QTD_MAX_ITENS];
             }
             this.qtdAtualItens = 0;
+            this.qtdSpawned = 0;
+            lastPicCorinthians = null;
+            this.interval = this.intervalo_ini;
+            lbQtdItens.Text = $"Quantidade de Palmeiras: {this.qtdAtualItens}";
         }
 
-        private void gameOver() {
+        private void gameOver(bool ganhou = false) {
 
             timerSpawnPalmeiras.Stop();
-            MessageBox.Show("Perdeu :/");
+            timerSpawnCorinthians.Stop();
+
+            if(lastPicCorinthians != null)
+                this.Controls.Remove(lastPicCorinthians);
+
+            string msg = ganhou ? $"Ganhou {this.pontuacao} Pontos!" : "Perdeu :/";
+            this.ganhou = ganhou;
+
+            MessageBox.Show(msg);
 
             this.clearItens();
             this.exibeOuRemoveMenu();
         }
+
+        private void timerSpawnCorinthians_Tick(object sender, EventArgs e) {
+
+            if(lastPicCorinthians != null) {
+                this.Controls.Remove(lastPicCorinthians);
+            }
+
+            Random rand = new Random();
+
+            //Atributos da pic box
+            PictureBox pic = new PictureBox();
+
+            pic.Width = 65;
+            pic.Height = 54;
+            pic.BackgroundImage = pbCorinthians.BackgroundImage;
+            pic.BackgroundImageLayout = pbCorinthians.BackgroundImageLayout;
+            pic.BackColor = Color.Transparent;
+
+            int x = rand.Next(30, this.ClientSize.Width - pic.Width);
+            int y = rand.Next(30, this.ClientSize.Height - pic.Height);
+
+            pic.Location = new Point(x, y);
+            pic.Visible = true;
+            pic.Click += Corinthians_Click;
+
+            lastPicCorinthians = pic;
+
+            this.Controls.Add(pic); //Adicionando A picture em tela
+
+            //Recalculando o interval deste timer
+            timerSpawnCorinthians.Interval = rand.Next(500, 1000);
+        }
+
     }
 }

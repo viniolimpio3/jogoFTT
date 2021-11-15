@@ -215,5 +215,14 @@
   <ItemGroup>
     <None Include="Resources\logo-palmeiras-256.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corinthians-logo-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corinthians-logo-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-corinthians-512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
