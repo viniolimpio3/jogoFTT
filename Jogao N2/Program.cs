@@ -18,7 +18,7 @@ namespace Jogao_N2
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmInicial());
+            Application.Run(new FrmPenalti());
         }
     }
 }

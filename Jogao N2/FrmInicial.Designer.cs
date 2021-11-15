@@ -36,7 +36,7 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(277, 107);
+            this.btnIniciar.Location = new System.Drawing.Point(277, 69);
             this.btnIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(133, 56);
@@ -47,7 +47,7 @@
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(277, 395);
+            this.btnSobre.Location = new System.Drawing.Point(277, 380);
             this.btnSobre.Margin = new System.Windows.Forms.Padding(4);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(133, 56);
@@ -58,7 +58,7 @@
             // 
             // btnConfiguracoes
             // 
-            this.btnConfiguracoes.Location = new System.Drawing.Point(277, 200);
+            this.btnConfiguracoes.Location = new System.Drawing.Point(277, 173);
             this.btnConfiguracoes.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfiguracoes.Name = "btnConfiguracoes";
             this.btnConfiguracoes.Size = new System.Drawing.Size(133, 56);
@@ -69,7 +69,7 @@
             // 
             // btnRanking
             // 
-            this.btnRanking.Location = new System.Drawing.Point(277, 304);
+            this.btnRanking.Location = new System.Drawing.Point(277, 272);
             this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
             this.btnRanking.Name = "btnRanking";
             this.btnRanking.Size = new System.Drawing.Size(133, 56);

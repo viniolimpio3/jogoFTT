@@ -19,15 +19,17 @@ namespace Jogao_N2
 
         public FrmPrincipal()
         {
-
             InitializeComponent();
         }
 
-        public FrmPrincipal(string nome) : this()
+        /*public FrmPrincipal(string nome) : this()
         {
+            //this.nomeJogador = FrmNovoJogador.nome;
+            //lblNome.Text = FrmNovoJogador.nome;
             this.nomeJogador = nome;
             lblNome.Text = nome;
-        }
+        }*/
+
         #endregion
 
         public bool colisao = false;
@@ -149,7 +151,8 @@ namespace Jogao_N2
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-
+            this.nomeJogador = FrmNovoJogador.nome;
+            lblNome.Text = FrmNovoJogador.nome;
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Jogao_N2
 {
     public partial class FrmNovoJogador : Form
     {
-        
-        public static FrmPrincipal principal = new FrmPrincipal("dudu");
+        public static string nome;
+        public string nomeusuario;
         /// <summary>
         /// Inicializador do Forms
         /// </summary>
@@ -38,6 +38,11 @@ namespace Jogao_N2
         /// Botão para começar a jogar e verificar se foi colocado o nome ou não.
         /// </summary>
         #region Botão Jogar
+
+        private void renomearvariavel(ref string palavra)
+        {
+            palavra = nomeusuario;
+        }
         private void btnJogar_Click(object sender, EventArgs e)
         {
             if (txtNome.Text.Length == 0)
@@ -47,13 +52,21 @@ namespace Jogao_N2
             else
             {
                 this.Close();
-                string nome = txtNome.Text;
+                renomearvariavel(ref nome);
                 //FrmPrincipal principal = new FrmPrincipal(nome);
                 this.Visible = false;
                 principal.ShowDialog();
                 //this.Visible = true;
             }
         }
+        //public static FrmPrincipal principal = new FrmPrincipal(nome);
+        public static FrmPrincipal principal = new FrmPrincipal();
+
         #endregion
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+            nomeusuario = txtNome.Text;
+        }
     }
 }

@@ -96,7 +96,7 @@ namespace Jogao_N2
             // 
             // timerMovimento
             // 
-            this.timerMovimento.Interval = 1;
+            this.timerMovimento.Interval = 4;
             this.timerMovimento.Tick += new System.EventHandler(this.timerMovimento_Tick);
             // 
             // timerBolaEsq
@@ -197,6 +197,7 @@ namespace Jogao_N2
             this.Controls.Add(this.MENSAGEM);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "FrmPenalti";
             this.Text = "Penalti";
             this.Load += new System.EventHandler(this.FrmPenalte_Load);

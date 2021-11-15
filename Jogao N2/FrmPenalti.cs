@@ -30,6 +30,7 @@ namespace Jogao_N2
         public FrmPenalti()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
             this.CenterToScreen();
         }
 
@@ -125,7 +126,7 @@ namespace Jogao_N2
 
         private void timerMovimento_Tick(object sender, EventArgs e)
         {
-            int velocidade = 20;
+            int velocidade = 25;
             int x = imgGoleiro.Location.X;
             int pontocentro = 217;
             int pontoesq = 67;
