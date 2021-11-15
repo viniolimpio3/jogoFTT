@@ -19,7 +19,7 @@ namespace Jogao_N2.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,16 @@ namespace Jogao_N2.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _130_1303415_reset_icons_return_icon_png_clipart {
+            get {
+                object obj = ResourceManager.GetObject("130-1303415_reset-icons-return-icon-png-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -133,6 +143,26 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crying_89 {
+            get {
+                object obj = ResourceManager.GetObject("crying-89", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Curinthians {
+            get {
+                object obj = ResourceManager.GetObject("Curinthians", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -146,6 +176,26 @@ namespace Jogao_N2.Properties {
         internal static System.Drawing.Bitmap dudasv2 {
             get {
                 object obj = ResourceManager.GetObject("dudasv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Futebol_Trave_de_Futebol_PNG_COMFUNDO_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Futebol_Trave_de_Futebol_PNG_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Futebol-Trave-de-Futebol-PNG-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +276,17 @@ namespace Jogao_N2.Properties {
         internal static System.Drawing.Bitmap jogador_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("jogador_removebg_preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_bitfinex_cryptocurrency_exchange_trade_computer_ic_5bf1132d469151_7888178715425257412891 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-bitfinex-cryptocurrency-exchange-trade-computer-ic-5bf1132d469151.7888178" +
+                        "715425257412891", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

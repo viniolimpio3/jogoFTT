@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Jogao_N2</RootNamespace>
     <AssemblyName>Jogao N2</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -196,6 +197,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\S3lLpB.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying-891.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130-1303415_reset-icons-return-icon-png-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-bitfinex-cryptocurrency-exchange-trade-computer-ic-5bf1132d469151.7888178715425257412891.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Futebol-Trave-de-Futebol-PNG-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curinthians.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

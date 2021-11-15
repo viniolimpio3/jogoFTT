@@ -118,58 +118,76 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ball_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ball-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="blogue_aniv_Silva" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>blogue aniv Silva.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bolasemfundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bolasemfundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bolasemfundo_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bolasemfundo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dudasv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>dudasv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gif_bola_rolando" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gif bola rolando.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gramado_grama" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gramado-grama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gramado_grama_Easy_Resize_com__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gramado-grama_Easy-Resize.com (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_fundo_minig_palmeiras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_fundo_minig_palmeiras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jogador_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jogador_removebg_preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S3lLpB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>S3lLpB.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_130253070_106328824601736_6718456248721065003_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>130253070_106328824601736_6718456248721065003_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bolasemfundo_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bolasemfundo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Futebol-Trave-de-Futebol-PNG-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Futebol-Trave-de-Futebol-PNG-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_fundo_minig_palmeiras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_fundo_minig_palmeiras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_200w" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>200w.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bolasemfundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bolasemfundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ball-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="130-1303415_reset-icons-return-icon-png-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\130-1303415_reset-icons-return-icon-png-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dudasv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dudasv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador_removebg_preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gramado_grama_Easy_Resize_com__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gramado-grama_Easy-Resize.com (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gif_bola_rolando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gif bola rolando.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crying-89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crying-891.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-bitfinex-cryptocurrency-exchange-trade-computer-ic-5bf1132d469151.7888178715425257412891" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-bitfinex-cryptocurrency-exchange-trade-computer-ic-5bf1132d469151.7888178715425257412891.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S3lLpB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>S3lLpB.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gramado_grama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gramado-grama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curinthians" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curinthians.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

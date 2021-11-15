@@ -111,6 +111,7 @@ namespace Jogao_N2
         private void button2_Click(object sender, EventArgs e) {
             FlappyBall novoJogador = new FlappyBall();
             novoJogador.Show();
+            this.Hide();
         }
     }
 }
