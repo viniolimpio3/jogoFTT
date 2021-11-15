@@ -36,7 +36,7 @@ namespace Jogao_N2
             txtComoJogar.Parent = pbDudu;
             txtFechar.Parent = pbDudu;
             txtInstrucao.Parent = pbDudu;
-            lbPontuacao.Parent = pbLineBack;
+         
             pbBall.Visible = false;
             pbDefender.Visible = false;
             pbDefender4.Visible = false;
@@ -45,7 +45,7 @@ namespace Jogao_N2
 
         private void tmPontuacao_Tick(object sender, EventArgs e)
         {
-            lbPontuacao.Text = $"Pontuação: {n}";
+       
             pbBall.Top += TickTimer;
             pbDefender4.Left -= velocidade4;
             pbDefender3.Left -= velocidade3;
