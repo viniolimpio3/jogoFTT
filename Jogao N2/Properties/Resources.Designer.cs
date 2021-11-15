@@ -133,6 +133,26 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap corinthians_logo_0 {
+            get {
+                object obj = ResourceManager.GetObject("corinthians-logo-0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corinthians_logo_01 {
+            get {
+                object obj = ResourceManager.GetObject("corinthians-logo-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -226,6 +246,16 @@ namespace Jogao_N2.Properties {
         internal static System.Drawing.Bitmap jogador_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("jogador_removebg_preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_corinthians_512 {
+            get {
+                object obj = ResourceManager.GetObject("logo-corinthians-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
