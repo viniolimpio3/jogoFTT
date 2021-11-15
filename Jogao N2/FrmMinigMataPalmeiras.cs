@@ -132,6 +132,7 @@ namespace Jogao_N2 {
 
             this.Controls.Remove(pic_clicada);
             this.pontuacao = 0;
+            this.lbPontuacao.Text = $"Pontuação: {this.pontuacao}";
             this.gameOver();
         }
 
@@ -159,7 +160,7 @@ namespace Jogao_N2 {
 
                     break;
                 }
-            }           
+            }
 
         }
 

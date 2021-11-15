@@ -63,16 +63,6 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _130253070_106328824601736_6718456248721065003_n {
-            get {
-                object obj = ResourceManager.GetObject("_130253070_106328824601736_6718456248721065003_n", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _200w {
             get {
                 object obj = ResourceManager.GetObject("_200w", resourceCulture);
@@ -86,26 +76,6 @@ namespace Jogao_N2.Properties {
         internal static System.Drawing.Bitmap ball {
             get {
                 object obj = ResourceManager.GetObject("ball", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ball_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("ball_removebg_preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blogue_aniv_Silva {
-            get {
-                object obj = ResourceManager.GetObject("blogue_aniv_Silva", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +123,19 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap download {
+        internal static System.Drawing.Bitmap crying_89 {
             get {
-                object obj = ResourceManager.GetObject("download", resourceCulture);
+                object obj = ResourceManager.GetObject("crying_89", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Curinthians {
+            get {
+                object obj = ResourceManager.GetObject("Curinthians", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +146,16 @@ namespace Jogao_N2.Properties {
         internal static System.Drawing.Bitmap dudasv2 {
             get {
                 object obj = ResourceManager.GetObject("dudasv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Futebol_Trave_de_Futebol_PNG_COMFUNDO_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Futebol_Trave_de_Futebol_PNG_COMFUNDO_removebg_preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,16 +213,6 @@ namespace Jogao_N2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap jogador {
-            get {
-                object obj = ResourceManager.GetObject("jogador", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap jogador_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("jogador_removebg_preview", resourceCulture);
@@ -275,27 +255,7 @@ namespace Jogao_N2.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap palmeiras_logo {
             get {
-                object obj = ResourceManager.GetObject("palmeiras-logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap palmeiras_logo1 {
-            get {
-                object obj = ResourceManager.GetObject("palmeiras-logo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap S3lLpB {
-            get {
-                object obj = ResourceManager.GetObject("S3lLpB", resourceCulture);
+                object obj = ResourceManager.GetObject("palmeiras_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
