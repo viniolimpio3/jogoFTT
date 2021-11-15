@@ -12,6 +12,8 @@ namespace Jogao_N2
 {
     public partial class FlappyBall : Form
     {
+        bool ganhou = false;
+        int contador = 0;
         int TickTimer;
         Random velocidade = new Random();
         int velocidade0 = 8;
@@ -20,77 +22,74 @@ namespace Jogao_N2
         int velocidade4 = 8;
         bool colisao = false;
         public int inicio = 0;
+
         Random defender = new Random();
         Random defender2 = new Random();
         Random defender3 = new Random();
-        public string nomeJogador;
+        int n = 0;
 
-
-        public FlappyBall(string nome)
+        public FlappyBall()
         {
+            
             InitializeComponent();
             pbBolaRolando.Parent = pbDudu;
             txtComoJogar.Parent = pbDudu;
             txtFechar.Parent = pbDudu;
             txtInstrucao.Parent = pbDudu;
-            this.nomeJogador = nome;
+         
+            pbBall.Visible = false;
+            pbDefender.Visible = false;
+            pbDefender4.Visible = false;
+            pbDefender3.Visible = false;
         }
 
         private void tmPontuacao_Tick(object sender, EventArgs e)
         {
-
+       
             pbBall.Top += TickTimer;
             pbDefender4.Left -= velocidade4;
             pbDefender3.Left -= velocidade3;
             pbDefender.Left -= velocidade0;
 
-            if (pbDefender4.Left < -50)
+            if (pbDefender4.Left <  -50 && n < 100)
             {
                 pbDefender4.Left = defender3.Next(650, 660);
                 velocidade2 = velocidade.Next(6, 10);
             }
 
-            if (pbDefender3.Left < -50)
+            if (pbDefender3.Left < -50 && n < 100)
             {
                 pbDefender3.Left = defender2.Next(600, 700);
                 pbDefender3.Top = defender2.Next(110, 170);
                 velocidade3 = velocidade.Next(6, 10);
             }
-            if (pbDefender.Left < -50)
+            if (pbDefender.Left < -50 && n < 100)
             {
                 pbDefender.Left = defender.Next(700, 800);
                 velocidade0 = velocidade.Next(8, 12);
             }
-            if (pbBall.Bounds.IntersectsWith(pbDefender.Bounds)
-               || pbBall.Bounds.IntersectsWith(pbDefender4.Bounds)
-               || pbBall.Bounds.IntersectsWith(pbDefender3.Bounds)
-               || pbBall.Bounds.IntersectsWith(pbLineBack.Bounds)
-               || pbBall.Bounds.IntersectsWith(pbLineUp.Bounds))
+            if (n >= 100)
             {
-                colisao = true;
-
+                pbGOL.Left -= velocidade2;
+                tmLose.Enabled = true;
             }
-            if (colisao)
-            {
-                tmPontuacao.Enabled = false;
-                pbLose.Visible = true;
-                colisao = false;
-                pbBall.Visible = false;
-                pbDefender.Visible = false;
-                pbDefender4.Visible = false;
-                pbDefender3.Visible = false;
-            }
-
-
+             n++;
         }
 
         private void FlappyBall_KeyDown(object sender, KeyEventArgs e)
         {
-            inicio = 1;
-            if (inicio == 1)
+             if(e.KeyCode == Keys.Enter)
             {
-                pbinicio.Visible = false;
+                pbBall.Visible = true;
+                pbDefender.Visible = true;
+                pbDefender4.Visible = true;
+                pbDefender3.Visible = true;
+                pbDudu.Visible = false;
                 tmPontuacao.Enabled = true;
+                pbBolaRolando.Visible = false;
+                txtComoJogar.Visible = false;
+                txtFechar.Visible = false;
+                txtInstrucao.Visible = false;
             }
 
             if (e.KeyCode == Keys.Space)
@@ -107,24 +106,80 @@ namespace Jogao_N2
             }
         }
 
-        private void lbPontuacao_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbinicio_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void tmCarregamento_Tick(object sender, EventArgs e)
         {
-            pbBolaRolando.Left += velocidade2;
+
+            if (pbBolaRolando.Bounds.IntersectsWith(pbBound.Bounds))
+            {
+                pbBolaRolando.Image = pbBall.Image;
+                tmCarregamento.Stop();
+               
+            }
+            else
+                pbBolaRolando.Left += velocidade2;
+
+
+        }
+
+
+        private void tmColisao_Tick(object sender, EventArgs e)
+        {
+            if (pbBall.Bounds.IntersectsWith(pbDefender.Bounds)
+              || pbBall.Bounds.IntersectsWith(pbDefender4.Bounds)
+              || pbBall.Bounds.IntersectsWith(pbDefender3.Bounds)
+              || pbBall.Bounds.IntersectsWith(pbLineBack.Bounds)
+              || pbBall.Bounds.IntersectsWith(pbLineUp.Bounds))
+            {
+                colisao = true;
+
+            }
+            if (colisao)
+            {
+
+                Lose();
+            }
+
+            if(pbBall.Bounds.IntersectsWith(pbGOL.Bounds))
+            {
+                ganhou = true;
+                pbWIN.Visible = true;
+                txtWIN.Visible = true;
+                tmLose.Stop();
+                pbBall.Visible = false;
+                pbGOL.Visible = false;
+               
+            }
+
+        }
+
+        private void Lose()
+        {
+            if (ganhou == false) 
+            {
+                tmPontuacao.Enabled = false;
+                pbLose.Visible = true;
+                colisao = false;
+                pbBall.Visible = false;
+                pbDefender.Visible = false;
+                pbDefender4.Visible = false;
+                pbDefender3.Visible = false;
+                pbCry.Visible = true;
+                pbGOL.Visible = false;
+            }
+         
+        }
+
+        private void tmLose_Tick(object sender, EventArgs e)
+        {
+            contador++;
+            
+            if ( contador >= 10 && ganhou == false)
+            {
+                Lose();
+            }
+          
         }
     }
 }

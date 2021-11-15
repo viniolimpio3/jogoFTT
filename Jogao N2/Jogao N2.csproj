@@ -100,6 +100,12 @@
     <Compile Include="FrmSobre.Designer.cs">
       <DependentUpon>FrmSobre.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTutorial.Designer.cs">
+      <DependentUpon>FrmTutorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmFlappyBall.resx">
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSobre.resx">
       <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTutorial.resx">
+      <DependentUpon>FrmTutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -207,22 +216,25 @@
     <None Include="Properties\S3lLpB.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\palmeiras-logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\palmeiras-logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-palmeiras-256.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\corinthians-logo-0.png" />
+    <None Include="Resources\Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\corinthians-logo-01.png" />
+    <None Include="Resources\crying-89.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo-corinthians-512.png" />
+    <None Include="Resources\Curinthians.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jogador-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmeiras-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

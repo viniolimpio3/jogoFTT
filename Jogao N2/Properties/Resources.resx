@@ -127,26 +127,14 @@
   <data name="img_fundo_minig_palmeiras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_fundo_minig_palmeiras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ball_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ball-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="corinthians-logo-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corinthians-logo-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jogador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>jogador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S3lLpB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>S3lLpB.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bolasemfundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bolasemfundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_200w" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>200w.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,20 +145,11 @@
   <data name="dudasv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>dudasv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jogador_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gramado_grama" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gramado-grama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_130253070_106328824601736_6718456248721065003_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>130253070_106328824601736_6718456248721065003_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blogue_aniv_Silva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>blogue aniv Silva.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gif_bola_rolando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gif bola rolando.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,16 +157,25 @@
   <data name="jogador_removebg_preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="palmeiras-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\palmeiras-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="corinthians-logo-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corinthians-logo-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="palmeiras-logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\palmeiras-logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo-corinthians-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-corinthians-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crying_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crying-89.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curinthians" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curinthians.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Futebol_Trave_de_Futebol_PNG_COMFUNDO_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Futebol-Trave-de-Futebol-PNG-COMFUNDO-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jogador_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jogador-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palmeiras_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\palmeiras-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
